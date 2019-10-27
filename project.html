@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Project - HCI</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/skin.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="./script/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
+    
 </head>
 
 <body id="wrapper">
@@ -59,7 +58,6 @@
                         <ul class="nav navbar-nav">
                             <li ><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="#">Gallery</a></li>
                             <li class="active"><a href="project.html">Project</a></li>
                             <li><a href="groupdiary.html">Group Diary </a></li>
                             <li><a href="#">Style Guide</a></li>
@@ -75,40 +73,107 @@
     <!--/.nav-ends -->
 
     
-    <section id="process">
+    <section>
     <div class="container mt-3">
       <h2> </h2>
   <br>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#requirement">Requirement</a>
+    <li class="active">
+      <a data-toggle="tab" href="#requirement">Requirement</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#design">Design</a>
+    <li >
+      <a  data-toggle="tab" href="#design">Design</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#implementation">Implementation</a>
+    <li >
+      <a  data-toggle="tab" href="#implementation">Implementation</a>
     </li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <h3></h3>
-      <p></p>
+    <div id="requirement" class="tab-pane fade in active">
+      <h3 style="text-align: center"><b>Requirement</b></h3>
+        <p style="text-align: center"> Hard work pays off!</p>
+        
+        <table class="table table-bordered">
+						<thead>
+							<tr>
+								<th data-toggle="tooltip" title="Số thứ tự">STT</th>
+								<th>Chức năng</th>
+								<th>Người đề xuất</th>
+								<th>Người thiết kế</th>
+								<th>Người hiện thực</th>
+								<th>Thời gian dự kiến</th>
+								<th>Trạng thái</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Chức năng danh sách tour trong nước</td>
+								<td>Nguyễn Thanh Hiền</td>
+								<td>Nguyễn Thanh Hiền</td>
+								<td>Nguyễn Thanh Hiền</td>
+								<td>25-10-2019 đến 5-11-2019</td>
+								<td>Đang tiến hành</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Chức năng xây dựng trang chủ</td>
+								<td>Đặng Trung Hiếu</td>
+								<td>Đặng Trung Hiếu</td>
+								<td>Đặng Trung Hiếu</td>
+								<td>25-10-2019 đến 5-11-2019</td>
+								<td>Đang tiến hành</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Chức năng đăng ký, đăng nhập</td>
+								<td>Trần Quốc Thuận</td>
+								<td>Trần Quốc Thuận</td>
+								<td>Trần Quốc Thuận</td>
+								<td>25-10-2019 đến 5-11-2019</td>
+								<td>Đang tiến hành</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Chức năng danh sách tour nước ngoài</td>
+								<td>Phạm Hoàng Việt</td>
+								<td>Phạm Hoàng Việt</td>
+								<td>Phạm Hoàng Việt</td>
+								<td>25-10-2019 đến 5-11-2019</td>
+								<td>Đang tiến hành</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Chức năng đặt tour</td>
+								<td>Võ Văn Kiệt</td>
+								<td>Võ Văn Kiệt</td>
+								<td>Võ Văn Kiệt</td>
+								<td>25-10-2019 đến 5-11-2019</td>
+								<td>Đang tiến hành</td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+        
     </div>
-    <div id="menu1" class="container tab-pane fade"><br>
-      <h3></h3>
-      <p></p>
+    <div id="design" class="container tab-pane fade">
+       <h3 style="text-align: center"><b>Design</b></h3>
+        <p style="text-align: center"> Hard work pays off!</p>
     </div>
-    <div id="menu2" class="container tab-pane fade"><br>
-      <h3></h3>
-      <p></p>
+    <div id="implementation" class="container tab-pane fade">
+      <h3 style="text-align: center"><b>Implementation</b></h3>
+        <p style="text-align: center"> Hard work pays off!</p>
+        
+        
     </div>
+    
   </div>
   </div>
-    </section>
+ </section>
 
 
    
@@ -175,18 +240,6 @@
 
     </section>
 
-    <section id="bottom-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                        Idea from <Strong style="color: orange">my team <3 </Strong> and implemented by <Strong style="color: orange">Hien Nguyen</Strong>
-                
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div id="panel">
         <div id="panel-admin">
