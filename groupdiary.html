@@ -11,7 +11,9 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
-    
+    <script>
+$(".nav a").on("click", function(){  $(".nav").find(".active").removeClass("active");  $(this).parent().addClass("active");});
+</script>
     
     
 </head>
@@ -849,11 +851,6 @@
         </div>
         <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
     </div>
-    <script>
-    $(document).ready(function() {
-  $('li.active').removeClass('active');
-  $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
-});
-</script>
+   
 </body>
 </html>
