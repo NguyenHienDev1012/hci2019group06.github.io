@@ -451,14 +451,6 @@ body.blue span {
 	color: #159eee;
 }
 body.blue .btn-primary {
-	padding: 15px 50px;
-	border-radius: 0px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #159eee;
-	background-color: #fff;
-	border-color: #159eee;
-	background: none;
 }
 body.blue .btn-primary:focus, body.blue .btn-primary.focus {
 	color: #159eee;
