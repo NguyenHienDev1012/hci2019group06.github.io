@@ -3506,6 +3506,7 @@ pointer-events: none;
 	border-bottom-color: #fff;
 }
 }
+
 .tab-content > .tab-pane {
 	display: none;
 }
