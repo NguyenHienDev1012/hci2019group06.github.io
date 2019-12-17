@@ -1,10 +1,371 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Group 06 - StyleGuide</title>
-</head>
-<body>
 
-</body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Group06 - Styleguide</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+        .tabs {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #tab-button {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #tab-button li {
+            display: table-cell;
+            width: 20%;
+        }
+
+        #tab-button li a {
+            display: block;
+            padding: .5em;
+            background: #eee;
+            border: 1px solid #ddd;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+        }
+
+        #tab-button li:not(:first-child) a {
+            border-left: none;
+        }
+
+        #tab-button li a:hover,
+        #tab-button .is-active a {
+            border-bottom-color: transparent;
+            background: #fff;
+        }
+
+        .tab-contents {
+            padding: .5em 2em 1em;
+            border: 1px solid #ddd;
+        }
+
+
+
+        .tab-button-outer {
+            display: none;
+        }
+
+        .tab-contents {
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .tab-button-outer {
+                position: relative;
+                z-index: 2;
+                display: block;
+            }
+
+            .tab-select-outer {
+                display: none;
+            }
+
+            .tab-contents {
+                position: relative;
+                top: -1px;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+0353656749</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">myteam_group06@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 social">
+                    <ul class="social_links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <h1>Group 06</h1>
+                        </a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="project.html">Project</a></li>
+                            <li><a href="groupdiary.html">Group Diary </a></li>
+                            <li><a href="technology.html">Technology </a></li>
+                            <li class="active"><a href="#">Style Guide</a></li>
+                            <li><a href="result.html">Result</a></li>
+
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/.nav-ends -->
+
+    <!---->
+    <section>
+         <ul class="breadcrumb" style="margin-left: 110px;margin-right: 110px;margin-top: 50px;margin-top: 0px">
+					<li><a href="index.html" style="font-size: 14px;"><i class="ace-icon fa fa-home home-icon" style="font-size: 18px;"></i>
+							Home</a></li>
+					<li ><a href="#" style="font-size: 14px; margin-left: -8px;"> <span style="color: blue;">StyleGuide</span></a></li>
+				</ul>
+    </section>
+
+    <div class="tabs" style="margin-bottom: 50px;">
+        <div class="tab-button-outer">
+            <ul id="tab-button">
+                <li><a href="#tab01">Typography</a></li>
+                <li><a href="#tab02">Color</a></li>
+                <li><a href="#tab03">Button</a></li>
+                <li><a href="#tab04">Form</a></li>
+                <li><a href="#tab05">Table</a></li>
+                <li><a href="#tab06">Icon</a></li>
+                <li><a href="#tab07">Layout</a></li>
+                <li><a href="#tab08">Directory structure</a></li>
+            </ul>
+        </div>
+        <div class="tab-select-outer">
+            <select id="tab-select">
+                <option value="#tab01">Typography</option>
+                <option value="#tab02">Color</option>
+                <option value="#tab03">Button</option>
+                <option value="#tab04">Form</option>
+                <option value="#tab05">Table</option>
+                <option value="#tab06">Icon</option>
+                <option value="#tab07">Layout</option>
+                <option value="#tab08">Directory structure</option>
+
+            </select>
+        </div>
+
+        <div id="tab01" class="tab-contents">
+            <h2>Tab 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident
+                impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem
+                quibusdam voluptatum.</p>
+        </div>
+        <div id="tab02" class="tab-contents">
+                <div class="col-12 p-4">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h1 class="mb-30">Color Palette</h1>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center">
+                            <div class="circle-default-color"></div>
+                            <div class="box-info">
+                                <h4 class="mt-15">Default</h4>
+                                <p>#64dd17</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center">
+                            <div class="circle-primary-color"></div>
+                            <div class="box-info">
+                                <h4 class="mt-15">Primary</h4>
+                                <p>#fb8533</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center">
+                            <div class="circle-heading-color"></div>
+                            <div class="box-info">
+                                <h4 class="mt-15">Heading</h4>
+                                <p>#272625</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center">
+                            <div class="circle-secondary-color"></div>
+                            <div class="box-info">
+                                <h4 class="mt-15">Secondary</h4>
+                                <p>#676462</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="tab03" class="tab-contents">
+            <h2>Tab 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident
+                impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem
+                quibusdam voluptatum.</p>
+        </div>
+        <div id="tab04" class="tab-contents">
+            <h2>Tab 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident
+                impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem
+                quibusdam voluptatum.</p>
+        </div>
+        <div id="tab05" class="tab-contents">
+            <h2>Tab 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident
+                impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem
+                quibusdam voluptatum.</p>
+        </div>
+
+        <div id="tab06" class="tab-contents">
+            <h2>Tab 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident
+                impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem
+                quibusdam voluptatum.</p>
+        </div>
+
+        <div id="tab07" class="tab-contents">
+            <h2>Tab 7</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident
+                impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem
+                quibusdam voluptatum.</p>
+        </div>
+
+        <div id="tab08" class="tab-contents">
+            <h2>Tab 8</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam consequuntur, esse provident
+                impedit minima porro! Laudantium laboriosam culpa quis fugiat ea, architecto velit ab, deserunt rem
+                quibusdam voluptatum.</p>
+        </div>
+
+    </div>
+
+    <!---->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr />
+                        <p> Khoa CNTT - Đại học Nông Lâm TP.HCM
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>My team</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr />
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#">UI/UX design</a>
+                            </li>
+                            <li>
+                                <a href="#">Java web </a>
+                            </li>
+                            <li>
+                                <a href="#">Breaking news</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script/maintabs.js"></script>
+
 </html>
