@@ -11,14 +11,178 @@
     <link rel="stylesheet" href="scss/skin.css">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link href="css/animate.min.css" rel="stylesheet"> 
-	<link href="css/style.css" rel="stylesheet" />	
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
+
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items:center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+
+.card .card-img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    clip-path: polygon(0 0,100% 0, 100% 78%, 0% 100%);
+    -webkit-clip-path:polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+}
+
+.profile-img{
+    border-radius: 50%;
+    border: 1rem solid #ebeff8;
+    height: 150px;
+    object-fit: cover;
+    margin-top: -10rem;
+    z-index: 1;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem 0;
+
+}
+
+.job-title{
+    columns: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.about{
+    font-size: 1.5rem;
+    margin:1.5rem 0;
+    text-align: center;
+    color: #333;
+}
+
+.card .btn{
+    padding:1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+.card .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,0.2);
+}
+.card .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.social-media i{
+    font-size: 3rem;
+}
+.fa-facebook-square{
+    color: #3b5999;
+}
+
+.fa-twitter-square{
+    color: #55acee;
+}
+
+.fa-instagram{
+    color:#ee668c ;
+}
+
+.fa-google-plus-square{
+    color: #dd4b39
+}
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover,
+.fa-google-plus-square:hover{
+    color: #45e19f;
+}
+
+@media screen and (min-width: 700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 2rem
+    }
+
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .card:nth-child(1){
+        animation: fadeIn .5s .5s backwards;
+    }
+
+    .card:nth-child(2){
+        animation: fadeIn .5s .1s backwards;
+    }
+
+    .card:nth-child(3){
+        animation: fadeIn .5s 1.5s backwards;
+    }
+
+    .card:nth-child(4){
+        animation: fadeIn .5s 2s backwards;
+    }
+
+    .card:nth-child(5){
+        animation: fadeIn .5s 2.5s backwards;
+    }
+    
+}
+
+</style>
 
 <body id="wrapper">
 
@@ -50,25 +214,27 @@
             <div class="container">
                 <div class="row">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                         <a class="navbar-brand" href="#">
-                            <h1>Group 06</h1></a>
+                            <h1>Group 06</h1>
+                        </a>
                     </div>
                     <div id="navbar" class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Home</a></li>
-                            <li ><a href="about.html">About</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="project.html">Project</a></li>
                             <li><a href="groupdiary.html">Group Diary </a></li>
-                            <li ><a href="technology.html">Technology </a></li>
+                            <li><a href="technology.html">Technology </a></li>
                             <li><a href="styleguide.html">Style Guide</a></li>
-                            <li class="active"><a href="result.html" >Result</a></li>
-                            
+                            <li class="active"><a href="result.html">Result</a></li>
+
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -77,183 +243,151 @@
         </nav>
     </header>
     <!--/.nav-ends -->
- <section>
-    <ul class="breadcrumb" style="width: 80%;margin: auto;justify-content: center;margin-bottom: 50px;">
-					<li><i class="ace-icon fa fa-home home-icon" style="font-size: 18px;"></i> <a href="index.html" style="font-size: 14px;">Home</a>
-							</li>
-					<li ><a href="#" style="font-size: 14px; margin-left: -8px;"> <span style="color: blue;">Result</span></a></li>
-				</ul>
-				</section>
+
+
+    <section style="width: 80%;margin: auto;height: 40px;margin-bottom: 30px;
+	padding-top: 10px;">
+        <ul style="width: 80%;margin: auto;margin-bottom: 50px;display: flex;justify-content: left;">
+            <li><a href="index.html" style="font-size: 14px;"><i class="ace-icon fa fa-home home-icon"
+                        style="font-size: 18px;margin-left:auto;"></i>
+                    Home</a></li>
+            <li><a href="#" style="font-size: 14px; margin-left: 8px;"><span style="color: blue;"> /
+                        Result</span></a></li>
+        </ul>
+    </section>
+    <!-- Section: Team v.1 -->
+    <section>
+        <div class="container mt-3">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#hien"><b>Đánh giá quá trình</b></a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#group"><b>Bài học tích luỹ</b></a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="group" class="tab-pane fade">
+                    <h3 style="text-align: center;">Những điều tích lũy được khi học môn: Giao Tiếp Người Máy</h3>
+                    <div style="margin-left: 20px">
+                        <p> 1. Giao diện gần gũi với hiện thực đời sống.</p>
+                        <p> 2. Cho người dùng sự kiểm soát và tự do.</p>
+                        <p> 3. Đảm bảo các nguyên tắc thiết kế (Thẩm mỹ, gợi lên nội dung, người dùng ít tốn sức, đồng
+                            bộ ...).</p>
+                        <p> 4. Đề cao sự thống nhất.</p>
+                        <p> 5. Hạn chế lỗi.</p>
+                        <p> 6. Cung cấp sự linh hoạt cho người dùng.</p>
+                        <p> 7. Giảm tải những gì người dùng cần phải nhớ.</p>
+                        <p> 8. Giúp người xác đinh và khắc phục sau khi lỗi xãy ra (trang lỗi).</p>
+                        <p> 9. Hoàn thành 100% và vượt tiến độ project.</p>
+                        <p> 10. Có thể bảo trì sau khi hoàn thiện một cách dễ dàng.</p>
+                    </div>
+                </div>
+
+                <div id="hien" class="tab-pane fade in active">
+                    <h3 style="text-align: center;">Đánh giá quá trình làm việc nhóm</h3>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="imgTeam/anhnen.jpg" alt="card background" class="card-img">
+                            <img src="img/hieubuilding.jpg" alt="profile image" class="profile-img">
+                            <h1>TrungHieu</h1>
+                            <p class="job-title">Lead Designer</p>
+                            <p class="about">
+                                Dang Trung Hieu 1999
+                            </p>
+                            <a href="#" class="btn">Contact</a>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="card">
+                            <img src="imgTeam/anhnen.jpg" alt="card background" class="card-img">
+                            <img src="img/hien.jpg" alt="profile image" class="profile-img">
+                            <h1>TrungHieu</h1>
+                            <p class="job-title">Lead Designer</p>
+                            <p class="about">
+                               Nguyen Thanh Hien 1999
+                            </p>
+                            <a href="#" class="btn">Contact</a>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+               
+                        <div class="card">
+                            <img src="imgTeam/anhnen.jpg" alt="card background" class="card-img">
+                            <img src="img/viet.jpg" alt="profile image" class="profile-img">
+                            <h1>TrungHieu</h1>
+                            <p class="job-title">Lead Designer</p>
+                            <p class="about">
+                                Dang Trung Hieu 1999
+                            </p>
+                            <a href="#" class="btn">Contact</a>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgTeam/anhnen.jpg" alt="card background" class="card-img">
+                            <img src="img/thuan.jpg" alt="profile image" class="profile-img">
+                            <h1>TrungHieu</h1>
+                            <p class="job-title">Lead Designer</p>
+                            <p class="about">
+                                Dang Trung Hieu 1999
+                            </p>
+                            <a href="#" class="btn">Contact</a>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <img src="imgTeam/anhnen.jpg" alt="card background" class="card-img">
+                            <img src="img/kiet.jpg" alt="profile image" class="profile-img">
+                            <h1>TrungHieu</h1>
+                            <p class="job-title">Lead Designer</p>
+                            <p class="about">
+                                Dang Trung Hieu 1999
+                            </p>
+                            <a href="#" class="btn">Contact</a>
+                            <ul class="social-media">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+    </section>
+
+
     <!---->
-
- <!-- Section: Team v.1 -->
-  <section>
-  <div class="container mt-3">
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs">
-    <li class="active">
-      <a data-toggle="tab" href="#group"><b>Cả nhóm </b></a>
-    </li>
-     <li >
-      <a data-toggle="tab" href="#hien"><b>Thanh Hiền</b></a>
-    </li>
-     <li>
-      <a data-toggle="tab" href="#thuan"><b>Quốc Thuận</b></a>
-    </li>
-     <li>
-      <a data-toggle="tab" href="#hieu"><b>Trung Hiếu</b></a>
-    </li>
-     <li >
-      <a data-toggle="tab" href="#viet"><b>Hoàng Việt</b></a>
-    </li>
-     <li>
-      <a data-toggle="tab" href="#kiet"><b>Văn Kiệt</b></a>
-    </li>
-  
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content" >
-    <div id="group" class="tab-pane fade in active" >
-        <h3 style="text-align: center;">Những điều tích lũy được khi học môn: Giao Tiếp Người Máy</h3>
-        <div style="margin-left: 20px">
-        <p>  1. Giao diện gần gũi với hiện thực đời sống.</p>
-        <p>  2. Cho người dùng sự kiểm soát và tự do.</p>
-        <p>  3. Đảm bảo các nguyên tắc thiết kế (Thẩm mỹ, gợi lên nội dung, người dùng ít tốn sức, đồng bộ ...).</p>
-        <p>  4. Đề cao sự thống nhất.</p>
-        <p>  5. Hạn chế lỗi.</p>
-        <p>  6. Cung cấp sự linh hoạt cho người dùng.</p>
-        <p>  7. Giảm tải những gì người dùng cần phải nhớ.</p>
-        <p>  8. Giúp người xác đinh và khắc phục sau khi lỗi xãy ra (trang lỗi).</p>
-        <p>  9. Hoàn thành 100% và vượt tiến độ project.</p>
-        <p>  10. Có thể bảo trì sau khi hoàn thiện một cách dễ dàng.</p>
-        </div>
-    </div>
-  
-    <div id="hien" class="tab-pane fade">
-    <h3 style="text-align: center;">Thành viên tự đánh giá công việc đã làm.</h3>
-    <div class="row" style="margin-left: 20px; margin-bottom: 100px">
-    <div class="col-md-4">
-    <p>1. Trang web tour du lịch.</p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/properties.html" style="color: #0000ff ">Hiển thị trang tour trong nước </a></p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/contact.html" style="color: #0000ff ">Trang liên hệ</a></p>
-    </div>
-    <div  class="col-md-4">
-     <p>2. Trang web nhóm.</p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/index.html" style="color: #0000ff ">Trang Home</a></p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/project.html" style="color: #0000ff ">Trang Project </a></p>
-    </div>
-    <div  class="col-md-4">
-    <p>3. Đánh giá.</p>
-     <p style="color: #3be63b"> Hoàn thành: 100%.</p>
-     <p style="color: #3be63b">Mức độ đóng góp: 20%. </p>
-    </div>
-    </div>
-    </div>
-    
-     <div id="thuan" class="tab-pane fade">
-    <h3 style="text-align: center;">Thành viên tự đánh giá công việc đã làm.</h3>
-    <div class="row" style="margin-left: 20px; margin-bottom: 100px">
-    <div class="col-md-4">
-    <p>1. Trang web tour du lịch.</p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/Login/register.html" style="color: #0000ff ">Chức năng đăng ký</a></p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/Login/login.html" style="color: #0000ff ">Chức năng đăng nhập</a></p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/Login/ForgotPass.html" style="color: #0000ff ">Chức năng quên mật khẩu</a></p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/service.html" style="color: #0000ff ">Chức năng chọn dịch vụ thanh toán</a></p>
-    
-    </div>
-    <div  class="col-md-4">
-     <p>2. Trang web nhóm.</p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/about.html" style="color: #0000ff ">Trang About</a></p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/groupdiary.html" style="color: #0000ff ">Trang Groupdiary </a></p>
-    </div>
-    <div  class="col-md-4">
-    <p>3. Đánh giá.</p>
-     <p style="color: #3be63b"> Hoàn thành: 100%.</p>
-     <p style="color: #3be63b">Mức độ đóng góp: 20%. </p>
-    </div>
-   
-   
-    </div>
-    </div>
-  
-   <div id="hieu" class="tab-pane fade">
-   <h3 style="text-align: center;">Thành viên tự đánh giá công việc đã làm.</h3>
-    <div class="row" style="margin-left: 20px; margin-bottom: 100px">
-    <div class="col-md-4">
-    <p>1. Trang web tour du lịch.</p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/index.html" style="color: #0000ff ">Chức năng xậy dựng trang chủ </a></p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/informationuser.html" style="color: #0000ff ">Chức năng nhập thông tin khách hàng</a></p>
-    </div>
-    <div  class="col-md-4">
-     <p>2. Trang web nhóm.</p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/groupdiary.html" style="color: #0000ff ">Trang Groupdiary</a></p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/styleguide.html" style="color: #0000ff ">Trang StyleGuide </a></p>
-    </div>
-    <div  class="col-md-4">
-    <p>3. Đánh giá.</p>
-     <p style="color: #3be63b"> Hoàn thành: 100%.</p>
-     <p style="color: #3be63b">Mức độ đóng góp: 20%. </p>
-    </div>
-    </div>
-    </div>
-    
-     <div id="viet" class="tab-pane fade">
-   <h3 style="text-align: center;">Thành viên tự đánh giá công việc đã làm.</h3>
-    <div class="row" style="margin-left: 20px; margin-bottom: 100px">
-    <div class="col-md-4">
-    <p>1. Trang web tour du lịch.</p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/internationaltour.html" style="color: #0000ff ">Chức năng danh sách tour nước ngoài </a></p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/payment.html" style="color: #0000ff ">	Chức năng thanh toán</a></p>
-    </div>
-    <div  class="col-md-4">
-     <p>2. Trang web nhóm.</p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/styleguide.html" style="color: #0000ff ">Trang StyleGuide</a></p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/result.html" style="color: #0000ff ">Trang Result </a></p>
-    </div>
-    <div  class="col-md-4">
-    <p>3. Đánh giá.</p>
-     <p style="color: #3be63b"> Hoàn thành: 100%.</p>
-     <p style="color: #3be63b">Mức độ đóng góp: 20%. </p>
-    </div>
-    </div>
-    </div>
-  
-   <div id="kiet" class="tab-pane fade">
-   <h3 style="text-align: center;">Thành viên tự đánh giá công việc đã làm.</h3>
-    <div class="row" style="margin-left: 20px; margin-bottom: 100px">
-    <div class="col-md-4">
-    <p>1. Trang web tour du lịch.</p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/booking.html" style="color: #0000ff ">Chức năng đặt tour </a></p>
-    <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="http://tourmanagement.tk/confirm.html" style="color: #0000ff ">Chức năng trang xác nhận</a></p>
-    </div>
-    <div  class="col-md-4">
-     <p>2. Trang web nhóm.</p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/result.html" style="color: #0000ff ">Trang Result</a></p>
-      <p><i class="fa fa-angle-double-right"></i> <a target="_blank"  href="https://hci2019group06.tk/technology.html" style="color: #0000ff ">Trang Technology </a></p>
-    </div>
-    <div  class="col-md-4">
-    <p>3. Đánh giá.</p>
-     <p style="color: #3be63b"> Hoàn thành: 100%.</p>
-     <p style="color: #3be63b">Mức độ đóng góp: 20%. </p>
-    </div>
-    </div>
-    </div>
-  
-  
-    </div>
-  </div>
- </section>
-
-
-<!---->
     <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-12 block">
                     <div class="footer-block">
                         <h4>Address</h4>
-                        <hr/>
+                        <hr />
                         <p> Khoa CNTT - Đại học Nông Lâm TP.HCM
                         </p>
                     </div>
@@ -262,7 +396,7 @@
                 <div class="col-md-3 col-sm-3 col-xs-12 block">
                     <div class="footer-block">
                         <h4>My team</h4>
-                        <hr/>
+                        <hr />
                         <ul class="footer-links">
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Features</a></li>
@@ -274,7 +408,7 @@
                 <div class="col-md-3 col-sm-3 col-xs-12 block">
                     <div class="footer-block">
                         <h4>Community</h4>
-                        <hr/>
+                        <hr />
                         <ul class="footer-links">
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Forum</a></li>
@@ -285,13 +419,13 @@
                 <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
                     <div class="footer-block">
                         <h4>Recent Posts</h4>
-                        <hr/>
+                        <hr />
                         <ul class="footer-links">
                             <li>
-                                <a href="#" >UI/UX design</a>
+                                <a href="#">UI/UX design</a>
                             </li>
                             <li>
-                                <a href="#" >Java web </a>
+                                <a href="#">Java web </a>
                             </li>
                             <li>
                                 <a href="#">Breaking news</a>
@@ -306,13 +440,16 @@
 
     </section>
 
+
+
+
     <section id="bottom-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                
+
                 </div>
             </div>
         </div>
