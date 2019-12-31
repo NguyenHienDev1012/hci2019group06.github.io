@@ -643,9 +643,6 @@ body.blue .navbar-inverse .navbar-toggle {
 body.blue .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: #159eee;
 }
-body.blue i {
-	color: #159eee;
-}
 body.blue .btn-default:hover {
 	color: #fff;
 	background-color: #159eee;
