@@ -1339,14 +1339,6 @@ body.red .btn-primary:focus, body.red .btn-primary.focus {
 	border-color: #e54e53;
 }
 body.red .btn-primary {
-	padding: 15px 50px;
-	border-radius: 0px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #e54e53;
-	background-color: #fff;
-	border-color: #e54e53;
-	background: none;
 }
 body.red .btn-primary:focus, body.red .btn-primary.focus {
 	color: #e54e53;
